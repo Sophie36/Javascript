@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="../css/styles.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="../css/component.css" />
+        <script src="../js/modernizr.custom.js"></script>
+    </head>
+    <body style="overflow : hidden">
+        <header><h1 style="text-align:center">LES OPERATEURS LOGIQUES - DE MORGAN</h1></header>
+        <br/>
+        <br/>
+        <div>
+            <div id="exercice5" style="float:left; width:350px; margin-left:20px">
+                <form name="departmentListForm"> 
+                    Dites-moi dans quel département vous vivez et je vous dirai dans quelle région il se situe.<br/> 
+                    <br/>
+                    <select name="departmentList" onChange="getRegion(value)"> 
+                        <option SELECTED>-- Sélectionnez le département où vous vivez --</option> 
+                    </select> 
+                </form>
+                <br/>
+                <br/>
+                <div id="resultatRegion"></div>
+            </div>
+            <div style="width:20px; height: 20vh; float:left;"></div>
+            <div id="exercice5bis" style="float:left; width:300px; height:20vh; margin-left:20px; border-left-style:solid; border-left-color:white" >
+                <span style="margin-left:20px;">Dites-moi quel âge vous avez</span><br/>
+                <span style="margin-left:20px;">et je vous dirai qui vous êtes.</span><br/> 
+                <br/>
+                <input id="age" style="margin-left:20px;" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' onChange="giveFeature(value)" value=""></input>
+                <br/>
+                <br/>
+                <div id="resultat"></div>
+            </div>
+        </div>
+        <img id="deMorgan" src="../img/tableau-produit-logique.png" style="width:100%;">
+        <script type="text/javascript">
+            "use strict";
+            //METTEZ TOUT LE JS DANS UN AUTRE FICHIER AFIN DE NE PAS MELANGER L'HTML ET LE JS
+            //INSPIREZ-VOUS DU FICHIER ../js/regions.js
+            
+            function giveFeature(age){
+            /* Indiquez par le biais d'alert ou d'un champ HTML la description qui correspond à l'âge saisi
+             * 0 à 1 compris : Vous êtes un bébé.
+             * 1 à 6 ans compris : Vous êtes un jeune enfant.
+             * 7 à 11 ans compris : Vous êtes un enfant qui a atteint l'âge de raison.
+             * 12 à 17 ans compris : Vous êtes un adolescent.
+             * 17 à ???: Vous êtes un jeune adulte.
+             * Supérieur à ??? : Vous êtes un sénior.
+             */
+            
+            
+            /* SUITE DE L'EXERCICE :
+             * Vous pouvez aussi ajouter un radio button grâce auquel vous déterminerez le sexe de l’utilisateur. 
+             * A l’aide de ternaires, vous pourrez ainsi accorder les phrases en fonction de l’utilisateur.
+             */
+            }
+        </script>  
+        <script src="../js/regions.js"></script>
+        <script src="../js/classie.js"></script>
+        <script src="../js/gnmenu.js"></script>
+        <script>
+            new gnMenu(document.getElementById('gn-menu'));
+        </script>
+    </body>
+</html>
