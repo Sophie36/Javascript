@@ -52,7 +52,7 @@ function getRegion(departement){
     else if (departement=="Alpes-de-Haute-Provence"||departement=="Hautes-Alpes" ||departement=="Alpes-Maritimes"||departement== "Bouches-du-Rhône"||departement=="Var"||departement=="	Vaucluse"){
             region=="Provence-Alpes-Côte d'Azur";
     }
-    else if (departement=="Martinique"||departement=="La Réunion"||departement=="Guyane"||departement=="Guadeloupe"||departement=="Mayotte"||){
+    else if (departement=="Martinique"||departement=="La Réunion"||departement=="Guyane"||departement=="Guadeloupe"||departement=="Mayotte"){
         (departement==region);
     }
     else {
