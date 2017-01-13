@@ -30,6 +30,8 @@
                 <span style="margin-left:20px;">Dites-moi quel âge vous avez</span><br/>
                 <span style="margin-left:20px;">et je vous dirai qui vous êtes.</span><br/> 
                 <br/>
+                <input style="margin-left:20px;" type="radio" name="genre" id="M" value="M" onchange="changeGenre()"> M </input>
+                <input type="radio" name="genre" id="F" value="F" onchange="changeGenre()"> F </input>
                 <input id="age" style="margin-left:20px;" type="text" onkeypress='return (event.which >= 48 && event.which <= 57) || event.which == 8 || event.which === 127' onChange="giveFeature(value)" value=""></input>
                 <br/>
                 <br/>
