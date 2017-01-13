@@ -5,6 +5,12 @@ function tableau(){
     var somme=0;
     var valeur="";
     for(var i=0; i<=tab.length -1; i++){
+        if (!isNaN(tab[i])){
+            if(i === 0){
+                nombres = ""+ tab[i]+"<br/>";
+            }
+            
+        }
 
         valeur = valeur + tab[i]+ "<br>"
         somme = somme + tab[i];
