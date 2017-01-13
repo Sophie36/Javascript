@@ -30,7 +30,7 @@
                 <span style="margin-left:20px;">Dites-moi quel âge vous avez</span><br/>
                 <span style="margin-left:20px;">et je vous dirai qui vous êtes.</span><br/> 
                 <br/>
-                <input id="age" style="margin-left:20px;" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' onChange="giveFeature(value)" value=""></input>
+                <input id="age" style="margin-left:20px;" type="text" onkeypress='return (event.which >= 48 && event.which <= 57) || event.which == 8 || event.which === 127' onChange="giveFeature(value)" value=""></input>
                 <br/>
                 <br/>
                 <div id="resultat"></div>
